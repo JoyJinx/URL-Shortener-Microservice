@@ -57,7 +57,7 @@ app.post("/api/shorturl", async function (req, res) {
         });
         await newUrl.save();
         res.json({
-          original_url: newUrl.origianl_url,
+          original_url: newUrl.original_url,
           short_url: newUrl.short_url,
         });
       }
